@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root{
+    --red: #ff1616;
+    --text-btn: #fff;
+}
+
+body{
+    background: linear-gradient(332deg, #2e2e2e, #090909);
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.s1-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.box-title{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: clamp(3.4rem, 10vw, 4.5rem); 
+    color: var(--red);
+    text-align: center;
+}
+
+.box-btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-play{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 8px 42px;
+    background-color: var(--red);
+    border: none;
+    color: var(--text-btn);
+    cursor: pointer;
+}
+
+.btn-mylist{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 8px 36px;
+    background-color: #ffffff00;
+    border: solid 1px #fff;
+    color: var(--text-btn);
+    cursor: pointer;
+}
+
+.s2-background{
+    background-image: url("../images/logo.png");
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text-btn)
+}
+
+
+@media only screen and (min-width: 768px){
+
+body{
+    background: linear-gradient(256deg, #2e2e2e, #090909);
+}
+
+header{
+    display: flex;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+.s1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 60%;    
+    padding: 0 0 0 80px;
+}
+
+.box-title{
+    display: flex;
+    justify-content: center;
+}
+
+.box-btn{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-play{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 8px 42px;
+    background-color: var(--red);
+    border: none;
+    color: var(--text-btn);
+    cursor: pointer;
+}
+
+.btn-mylist{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 8px 26px;
+    background-color: #ffffff00;
+    border: solid 1px #fff;
+    color: var(--text-btn);
+    cursor: pointer;
+}
+
+.s2-background{
+    background-image: url("../images/logo.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--text-btn)
+}
+}
